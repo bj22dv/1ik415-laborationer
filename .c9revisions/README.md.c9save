@@ -1,3 +1,4 @@
 {"ts":1378312688869,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"1ik415-laborationer\n===================\nBjörn Jeansson WP13 Laborationer\n"]],"start1":0,"start2":0,"length1":0,"length2":73}]],"length":73}
 {"contributors":[],"silentsave":false,"ts":1378313347010,"patch":[[{"diffs":[[0,"========"],[1," Hej hopp"],[0,"\nBjörn J"]],"start1":31,"start2":31,"length1":16,"length2":25},{"diffs":[[0,"P13 Laborationer"],[-1,"\n"],[1,"!\nC9 commit test"]],"start1":65,"start2":65,"length1":17,"length2":32}]],"length":97,"saved":false}
 {"ts":1378313418537,"patch":[[{"diffs":[[0,"===="],[-1," Hej hopp"],[0,"\nBjö"]],"start1":35,"start2":35,"length1":17,"length2":8}]],"length":88,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1379246554251,"patch":[[{"diffs":[[0,"er!\n"],[-1,"C9 commit test"],[1," Min egna kurssida"]],"start1":70,"start2":70,"length1":18,"length2":22}]],"length":92,"saved":false}
