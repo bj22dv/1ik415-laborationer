@@ -4,54 +4,70 @@
         <meta charset="utf-8"/>
         <title>Björns lite enkla hemsida</title>
         
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
     </head>
-    <body>
-    <h1>Björns lite enkla hemsida</h1>
-    <h3>En helt vanlig webbplats</h3>
     
-        <ul>
+    <body>
+    <div id="container">
+        <div id="header">
+            <h1>Björns lite enkla hemsida</h1>
+            <!--<img id=logo src="pics/logo.png" alt="Logo">-->
+        </div>
+        
+        <ul id="nav">
             <li><a href="index.html">Start</a></li>
             <li><a href="pages/laborationer.html">Laborationer</a></li>
             <li><a href="pages/presentation.html">Presentation</a></li>
             <li><a href="pages/kontakt.html">Kontakt</a></li>
         </ul>
         
-        <img id=logo src="pics/logo.png" alt="Logo"/>
+        <div id="maincontent">
         
     <h2 id="blogg">Kursblogg</h2>
+        
+        <div class="post">
+            <h3 id="trailer">Mitt första videoklipp</h3>
+            <p>Här är en liten trailer till kortfilmen Big Buck Bunny.</p>
+            
+                <video width="320" height="240" controls src="trailer.ogg" type="video/ogg">    <!--Videotypen funkar inte genom Cloud 9. Får försöka fixa andra format sen, kan ej ladda ner i i skolan-->
+                </video>
+            
+            <p>(c) copyright 2008, Blender Foundation / <a href="http://www.bigbuckbunny.org" target="_blank">www.bigbuckbunny.org</a></p>
+            <p>Skrivet av Björn, 16/09-2013</p>
+        </div>
     
-    <h3 id="trailer">Mitt första videoklipp</h3>
-    <p>Här är en liten trailer till kortfilmen Big Buck Bunny.</p>
-    
-        <video width="320" height="240" controls src="trailer.ogg" type="video/ogg">    <!--Videotypen funkar inte genom Cloud 9. Får försöka fixa andra format sen, kan ej ladda ner i i skolan-->
-        </video>
-    
-    <p>(c) copyright 2008, Blender Foundation / <a href="http://www.bigbuckbunny.org" target="_blank">www.bigbuckbunny.org</a></p>
-    <p>Skrivet av Björn, 16/09-2013</p>
-    
-    
-    <h3 id="vektor">Min första vektorbaserade bild</h3>
-        <p>Såhär blev min första vektorbaserade bild. Jag insperarades av min oerhört snygga logotyp. 
-        <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
- <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
- <g>
-  <title>Layer 1</title>
-  <ellipse ry="179" rx="145" id="svg_7" cy="227" cx="312" stroke-width="5" stroke="#ffff00" fill="#ffff00"/>
-  <line id="svg_13" y2="230" x2="262" y1="106" x1="262" stroke-width="5" stroke="#000000" fill="none"/>
-  <line id="svg_14" y2="235" x2="341" y1="104" x1="340" stroke-width="5" stroke="#000000" fill="none"/>
-  <line id="svg_15" y2="140" x2="387" y1="140" x1="209" stroke-width="5" stroke="#000000" fill="none"/>
-  <line id="svg_16" y2="201" x2="385" y1="201" x1="210" stroke-width="5" stroke="#000000" fill="none"/>
-  <line id="svg_17" y2="234" x2="262" y1="224" x1="261" stroke-width="5" stroke="#000000" fill="none"/>
-  <path d="m207,266c0,0 0,1 0,2c0,1 -0.160477,8.232605 2,16c2.639236,9.488647 8.093414,18.930786 14,27c5.081039,6.941406 8.464462,11.464478 12,15c3.535538,3.535522 8.914474,6.177551 15,9c6.908844,3.204315 15.914246,6.490814 26,8c9.939209,1.487244 19,1 25,1c4,0 7,0 8,0c1,0 3.038727,-0.51944 6,-1c3.121429,-0.506531 8.041321,-1.847229 12,-3c3.036163,-0.884125 7.186005,-2.692535 9,-4c3.441803,-2.480713 8.111298,-3.64505 15,-6c5.095642,-1.741974 9.611053,-2.92807 12,-5c1.68924,-1.465088 2.390991,-3.769501 6,-6c2.690002,-1.662506 5.385101,-4.372009 8,-8c2.480713,-3.441803 4.769501,-5.390991 7,-9c1.662506,-2.690002 3.33197,-7.22937 5,-11c1.458649,-3.297333 2.2565,-3.796997 3,-5c1.662506,-2.690002 2.144287,-4.934143 3,-7c1.210144,-2.92157 3,-5 4,-8c1,-3 2,-6 4,-9l1,-3l1,-1" id="svg_18" stroke-width="5" stroke="#000000" fill="none"/>
- </g>
-</svg></p>
-<p>Skrivet av Björn, 15/09-2013</p>
-    
-    <h3 id="hejsan">Hej och Välkommen!</h3>
+        <div class="post">
+        <h3 id="vektor">Min första vektorbaserade bild</h3>
+        
+            <p>Såhär blev min första vektorbaserade bild. Jag insperarades av min oerhört snygga logotyp. 
+            <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+             <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+             <g>
+                  <title>Vektorbild</title>
+                  <ellipse ry="179" rx="145" id="svg_7" cy="227" cx="312" stroke-width="5" stroke="#ffff00" fill="#ffff00"/>
+                <line id="svg_13" y2="230" x2="262" y1="106" x1="262" stroke-width="5" stroke="#000000" fill="none"/>
+                 <line id="svg_14" y2="235" x2="341" y1="104" x1="340" stroke-width="5" stroke="#000000" fill="none"/>
+                  <line id="svg_15" y2="140" x2="387" y1="140" x1="209" stroke-width="5" stroke="#000000" fill="none"/>
+                  <line id="svg_16" y2="201" x2="385" y1="201" x1="210" stroke-width="5" stroke="#000000" fill="none"/>
+                <line id="svg_17" y2="234" x2="262" y1="224" x1="261" stroke-width="5" stroke="#000000" fill="none"/>
+                <path d="m207,266c0,0 0,1 0,2c0,1 -0.160477,8.232605 2,16c2.639236,9.488647 8.093414,18.930786 14,27c5.081039,6.941406 8.464462,11.464478 12,15c3.535538,3.535522 8.914474,6.177551 15,9c6.908844,3.204315 15.914246,6.490814 26,8c9.939209,1.487244 19,1 25,1c4,0 7,0 8,0c1,0 3.038727,-0.51944 6,-1c3.121429,-0.506531 8.041321,-1.847229 12,-3c3.036163,-0.884125 7.186005,-2.692535 9,-4c3.441803,-2.480713 8.111298,-3.64505 15,-6c5.095642,-1.741974 9.611053,-2.92807 12,-5c1.68924,-1.465088 2.390991,-3.769501 6,-6c2.690002,-1.662506 5.385101,-4.372009 8,-8c2.480713,-3.441803 4.769501,-5.390991 7,-9c1.662506,-2.690002 3.33197,-7.22937 5,-11c1.458649,-3.297333 2.2565,-3.796997 3,-5c1.662506,-2.690002 2.144287,-4.934143 3,-7c1.210144,-2.92157 3,-5 4,-8c1,-3 2,-6 4,-9l1,-3l1,-1" id="svg_18" stroke-width="5" stroke="#000000" fill="none"/>
+                </g>
+                </svg></p>
+                <p>Skrivet av Björn, 15/09-2013</p>
+        </div>
+    <div class="post">
+        <h3 id="hejsan">Hej och Välkommen!</h3>
         <p>Detta är mitt första inlägg på min första hemsida. Målet med denna sida är att den ska fungera som en portal där jag och andra lätt kan komma åt mina kommande laborationer och andra projekt.</p>
         <p>Skrivet av Björn, 15/09-2013</p>
-        
-    </body>
+    </div>
+    </div>
+    <div id="footer">
+        Björn Jeansson Industries
+    </div>
+    </div>
     
+    </body>
     
 </html>

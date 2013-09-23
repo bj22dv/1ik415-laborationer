@@ -4,134 +4,149 @@
         <meta charset="utf-8"/>
         <title>Laborationer - Björns lite enkla hemsida</title>
         
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        
     </head>
     <body>
-    <h1>Laborationer</h1>
-    <h3>Björns lite enkla hemsida</h3>
+    <div id="container">
+            <div id="header">
+                <h1>Björns lite enkla hemsida</h1>
+                <!--<img id=logo src="pics/logo.png" alt="Logo">-->
+            </div>
+            
+        <ul id="nav">
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="laborationer.html">Laborationer</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
         
-    <ul>
-        <li><a href="../index.html">Start</a></li>
-        <li><a href="laborationer.html">Laborationer</a></li>
-        <li><a href="presentation.html">Presentation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+        <div id="maincontent">
         
+       <h2>Laborationer</h2>
+       <ul>
+              <li><a href="#laboration1">Laboration 1</a></li>
+              <li><a href="#laboration2">Laboration 2</a></li>
+       </ul>
+       
+       <br>
+       <h2 id="tabell">Resultat</h2>
+       
+    <table border="1">
+    <thead>
+        <tr>
+            <th>Laboration</th>
+            <th>Uppgift</th>
+            <th>Status</th>
+            <th>Redovisad</th>
+        </tr>
+    </thead>
     
-   <h2>Webbteknisk introduktion</h2>
-   <ul>
-          <li><a href="#laboration1">Laboration 1</a></li>
-          <li><a href="#laboration2">Laboration 2</a></li>
-   </ul>
-   
-   <h2 id="tabell">Resultat</h2>
-   
-<table border="1">
-<thead>
+    <tfoot>
+        <tr>
+            <td colspan="4">Laborationsresultat gällande Björn Jeansson</td>
+        </tr>    
+    </tfoot>
+    
     <tr>
-        <th>Laboration</th>
-        <th>Uppgift</th>
-        <th>Status</th>
-        <th>Redovisad</th>
+        <td rowspan="9">1</td>
+        <td>1</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
     </tr>
-</thead>
-
-<tfoot>
     <tr>
-        <td colspan="4">Laborationsresultat gällande Björn Jeansson</td>
-    </tr>    
-</tfoot>
-
-<tr>
-    <td rowspan="9">1</td>
-    <td>1</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>4</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>5</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>6</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>7</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>8</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-<tr>
-    <td>9</td>
-    <td>Godkänd</td>
-    <td>16/09-13</td>
-</tr>
-</table>
-   
-   <h3 id="laboration1">Laboration 1</h3>
-
-       <p>Uppgifter:</p>
+        <td>2</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Godkänd</td>
+        <td>16/09-13</td>
+    </tr>
+    </table>
        
-       <ol>
-       
-        <li>www-katalog. Check</li>
-        <li><a href="presentation.html">Ett första dokument</a></li>
-        <li><a href="../index.html">Startsidan</a></li>
-        <li>Absoluta och relativa sökvägar
-           <dl>
-               <dt>Vilken är den absoluta sökvägen till filen bottom.html?</dt>
-               <dd>Svar: http://www.server.se/html/pages/bottom.html</dd>
-               <dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
-               <dd>Svar: pages/top.html </dd>
-               <dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html? </dt>
-               <dd>Svar: ../../index.html</dd>
-               <dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
-               <dd>Svar: http://www.server.se</dd>
-               <dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
-               <dd>Svar: bottom.html</dd>
-               <dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
-               <dd>Svar: html/pages/top.html</dd>
-           </dl>
-       </li>
-       <li>Länkar och listor</li>
-       
-       <li>Bilder
-            <ol>
-            <li><a href="presentation.html#hest">Presentationsbild</a></li>
-            <li><a href="../pics/logo.png">Logotyp</a></li>
-            <li><a href="../index.html#vektor">Uppgift 1.6 Min vektorbild</a></li>
+       <br>
+       <h3 id="laboration1">Laboration 1</h3>
+    
+           <p>Uppgifter:</p>
+           
+           <ol>
+           
+            <li>www-katalog. Check</li>
+            <li><a href="presentation.html">Ett första dokument</a></li>
+            <li><a href="../index.html">Startsidan</a></li>
+            <li>Absoluta och relativa sökvägar
+               <dl>
+                   <dt>Vilken är den absoluta sökvägen till filen bottom.html?</dt>
+                   <dd>Svar: http://www.server.se/html/pages/bottom.html</dd>
+                   <dt>Vilken är den relativa sökvägen från filen default.html till filen top.html?</dt>
+                   <dd>Svar: pages/top.html </dd>
+                   <dt>Vilken är den relativa sökvägen från filen bottom.html till filen index.html? </dt>
+                   <dd>Svar: ../../index.html</dd>
+                   <dt>Vilken är den absoluta sökvägen till filen index.html?</dt>
+                   <dd>Svar: http://www.server.se</dd>
+                   <dt>Vilken är den relativa sökvägen från filen top.html till bottom.html?</dt>
+                   <dd>Svar: bottom.html</dd>
+                   <dt>Vilken är den relativa sökvägen från filen index.html till top.html?</dt>
+                   <dd>Svar: html/pages/top.html</dd>
+               </dl>
+           </li>
+           <li>Länkar och listor</li>
+           
+           <li>Bilder
+                <ol>
+                <li><a href="presentation.html#hest">Presentationsbild</a></li>
+                <li><a href="../pics/logo.png">Logotyp</a></li>
+                <li><a href="../index.html#vektor">Uppgift 1.6 Min vektorbild</a></li>
+                </ol>
+                </li>
+           <li><a href="../index.html#trailer">Video</a></li>
+           <li><a href="laborationer.html#tabell">Tabell över laborationsstatus</a></li>
+           <li><a href="kontakt.html#form">Formulär</a></li>
+           
             </ol>
-            </li>
-       <li><a href="../index.html#trailer">Video</a></li>
-       <li><a href="laborationer.html#tabell">Tabell över laborationsstatus</a></li>
-       <li><a href="kontakt.html#form">Formulär</a></li>
-       
-        </ol>
+            
+            <br>
+            <h3 id="laboration2">Laboration 2</h3>
+            <p>Under arbete.</p>
+        </div>
         
-        <h3 id="laboration2">Laboration 2</h3>
-        <p>Under arbete.</p>
-        
-        </body>
+        <div id="footer">
+        Björn Jeansson Industries
+        </div>
+    </div> 
+    </body>
 
 </html>
