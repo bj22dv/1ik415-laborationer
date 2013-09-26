@@ -1,18 +1,17 @@
-#container{
+#container{                                                /*Bakgrunden av sidan*/
     width:960px;
     overflow:auto;
     margin:auto;
     background:#527578;
 }
-#header{
+#header{                                                /*Huvudet av sidan*/
     width:100%;
     height:120px;
     background-image: url(pics/logoreal.svg);
     background-position:181% 45%;
     background-repeat:no-repeat;
 }
-
-#footer{
+#footer{                                                /*Foten av sidan*/
     float:right;
     width:960px;
     height:50px;
@@ -21,37 +20,31 @@
     background-position:right;
     background-repeat:no-repeat;
 }
-
-#nav{
-    width:100px;
-    height:150px;
-    float: left;
-    list-style-type:none;
-}
-#maincontent{
+#maincontent{                                           /*Det huvudsakliga innehållet på sidan*/
     width:750px;
     min-height:500px;
     float: right;
     border:2px solid #84978F;
     background:#B3B1B2;
 }
-    
-.post{
+.post{                                                   /*Blogginlägg*/
     margin:10px 0 10px 10px;
     background:#84978F;
     border:2px solid #527578;
     overflow:hidden;
 }
-#fest
+#fest                                                   /*Bild i blogginlägg*/
 {
     width:25%;
     margin-bottom:10px;
 }
-.right
-{
-    float:right;
+#nav{                                                   /*Navigationsmenyn*/
+    width:100px;
+    height:150px;
+    float: left;
+    list-style-type:none;
 }
-#nav a:link
+#nav a:link                                               /*Länkarna i navigationsmenyn*/
 {
     display:block;
     font-weight:bold;
@@ -61,27 +54,32 @@
     text-align:center;
     padding:5px;
     text-decoration:none;
-    border:2px solid #84978F;
+    border:3px solid #84978F;
 }
-#nav a:visited
+#nav a:visited                                          /*Besökta länkar*/
 {
     color:#FFFFFF;
     background-color:#B3B1B2;
     border:2px solid  #84978F;
 }
-#nav a:hover
+#nav a:hover                                             /*Länkar man håller musen över*/
 {
     background-color:#84978F;
     color:#FFFFFF;
 }
-#nav a:active
+#nav a:active                                           /*Klickad länk innan den byter sida*/
 {
     color:black;
 }
 #container #nav .activeLink
 {
-    color:black;
+    color:white;
     background-color:#47423F;
+    text-decoration:underline;
+}
+.right
+{
+    float:right;
 }
 h1{
     font-size: 40px;
@@ -96,26 +94,21 @@ h3{
     font-family:Verdana;
     text-decoration:underline;
 }
-
 p{
     font-size:13px;
     font-family:Verdana;
 }
-
 table, tr,td{
     border:1px solid black;
     font-size:13;
 }
-
 td{
     text-align:center;
     padding:3px;
 }
-
 thead, tfoot{
     background:#47423F;
 }
-
 ol{
     list-style-type:decimal;
     padding-left:30px;
@@ -124,7 +117,6 @@ ul{
     list-style-type:square; 
     padding-left:30px;
 }
-
 dt{
     padding-left:30px;
     font-size:13px;
@@ -132,7 +124,6 @@ dt{
     font-weight:bold;
     font-family:Verdana;
 }
-
 dd{
     margin-left:30px;
 }
