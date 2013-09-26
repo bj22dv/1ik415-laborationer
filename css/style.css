@@ -1,5 +1,5 @@
 #container{                                                /*Bakgrunden av sidan*/
-    width:960px;
+    width:973px;
     overflow:auto;
     margin:auto;
     background:#527578;
@@ -23,8 +23,9 @@
 #maincontent{                                           /*Det huvudsakliga innehållet på sidan*/
     width:750px;
     min-height:500px;
-    float: right;
-    border:2px solid #84978F;
+    /*float: right;*/
+    margin-left: 215px;
+    border:4px solid #84978F;
     background:#B3B1B2;
 }
 .post{                                                   /*Blogginlägg*/
@@ -71,59 +72,59 @@
 {
     color:black;
 }
-#container #nav .activeLink
+#container #nav .activeLink                            /*Länken till sidan använderen just nu befinner sig på*/
 {
     color:white;
     background-color:#47423F;
     text-decoration:underline;
 }
-.right
+.right                                                   /*Klassen right. Används för att högerjustera*/
 {
     float:right;
 }
-h1{
+h1{                                                       /*Rubriken på hemsidan*/
     font-size: 40px;
     font-family:Batang;
 }
-h2{
+h2{                                                         /*Rubriken på sidan man för tillfället befinner sig på*/
     font-size: 30px;
     font-family:Verdana;
 }
-h3{
+h3{                                                         /*Underrubrik*/
     font-size: 26px;
     font-family:Verdana;
     text-decoration:underline;
 }
-p{
+p{                                                         /*Vanligt textinnehåll*/
     font-size:13px;
     font-family:Verdana;
 }
-table, tr,td{
+table, tr,td{                                               /*Tabell taxt och ram*/
     border:1px solid black;
-    font-size:13;
+    font-size:13px;
 }
-td{
+td{                                                         /*Tabell rutor*/
     text-align:center;
     padding:3px;
 }
-thead, tfoot{
-    background:#47423F;
+thead, tfoot{                                               /*Tabell huvud och fot*/
+    background:#84978F;
 }
-ol{
+ol{                                                         /*Numeriska listor*/
     list-style-type:decimal;
     padding-left:30px;
 }
-ul{
+ul{                                                         /*Punktlistor*/
     list-style-type:square; 
     padding-left:30px;
 }
-dt{
+dt{                                                         /*Beskrivande lista, huvud*/
     padding-left:30px;
     font-size:13px;
     line-height:16px;
     font-weight:bold;
     font-family:Verdana;
 }
-dd{
+dd{                                                         /*Beskrivande lista, innehåll*/
     margin-left:30px;
 }
