@@ -40,6 +40,16 @@
     margin:10px 0 10px 10px;
     background:#84978F;
     border:2px solid #527578;
+    overflow:hidden;
+}
+#fest
+{
+    width:25%;
+    margin-bottom:10px;
+}
+.right
+{
+    float:right;
 }
 #nav a:link
 {
@@ -47,9 +57,9 @@
     font-weight:bold;
     color:#FFFFFF;
     background-color:#47423F;
-    width:150px;
+    width:170px;
     text-align:center;
-    padding:4px;
+    padding:5px;
     text-decoration:none;
     border:2px solid #84978F;
 }
@@ -84,6 +94,7 @@ h2{
 h3{
     font-size: 26px;
     font-family:Verdana;
+    text-decoration:underline;
 }
 
 p{
