@@ -1,17 +1,23 @@
-#container{                                                /*Bakgrunden av sidan*/
+@media screen                                               /*Här börjar koden för skärmvisning*/
+{
+
+#container
+{                                                /*Bakgrunden av sidan*/
     width:973px;
     overflow:auto;
     margin:auto;
     background:#527578;
 }
-#header{                                                /*Huvudet av sidan*/
+#header
+{                                                /*Huvudet av sidan*/
     width:100%;
     height:120px;
     background-image: url(pics/logoreal.svg);
     background-position:181% 45%;
     background-repeat:no-repeat;
 }
-#footer{                                                /*Foten av sidan*/
+#footer
+{                                                /*Foten av sidan*/
     float:right;
     width:973px;
     height:50px;
@@ -20,7 +26,8 @@
     background-position:right;
     background-repeat:no-repeat;
 }
-#maincontent{                                           /*Det huvudsakliga innehållet på sidan*/
+#maincontent
+{                                           /*Det huvudsakliga innehållet på sidan*/
     width:750px;
     min-height:500px;
     /*float: right;*/
@@ -28,7 +35,8 @@
     border:4px solid #84978F;
     background:#B3B1B2;
 }
-.post{                                                   /*Blogginlägg*/
+.post
+{                                                   /*Blogginlägg*/
     margin:10px 0 10px 10px;
     background:#84978F;
     border:2px solid #527578;
@@ -39,7 +47,8 @@
     width:25%;
     margin-bottom:10px;
 }
-#nav{                                                   /*Navigationsmenyn*/
+#nav
+{                                                   /*Navigationsmenyn*/
     width:215px;
     height:128px;
     float: left;
@@ -177,3 +186,160 @@ legend
     border: 1px solid black;
     padding: 2px 6px;
 }
+}                                                        /*Sluttagg till media screen*/
+
+@media print                                              /*Här börjar koden för det som visas vid utskrivning*/
+{
+    
+#container
+{                                            
+    width:973px;
+    overflow:auto;
+    margin:auto;
+    background:#527578;
+}
+#header
+{                                                
+    width:100%;
+    background-position:181% 45%;
+    background-repeat:no-repeat;
+}
+#footer
+{                                                
+    float:right;
+    width:973px;
+    height:50px;
+    background:#527578;
+    background-position:right;
+    background-repeat:no-repeat;
+}
+#maincontent
+{                                           
+    width:750px;
+    /*float: right;*/
+    border:4px solid #84978F;
+    background:#B3B1B2;
+}
+.post
+{                                                  
+    margin:10px 0 10px 10px;
+    background:#84978F;
+    border:2px solid #527578;
+    overflow:hidden;
+}
+#fest                                                   
+{
+    width:25%;
+    margin-bottom:10px;
+}
+#trailer
+{                                                       /*Videoklippet ska inte vara med*/
+    display:none;
+}
+#nav
+{                                                       /*Navigationsmenyn ska inte vara med*/
+    display:none;
+}
+a:after
+{
+    content: " (" attr(href) ")";
+}
+.right                                                   
+{
+    float:right;
+}
+h1
+{                                                      /*All text är mindre*/
+    font-size: 20px;
+    font-family:Batang;
+}
+h2
+{                                                       
+    font-size: 18px;
+    font-family:Verdana;
+}
+h3
+{                                                       
+    font-size: 16px;
+    font-family:Verdana;
+    text-decoration:underline;
+}
+p
+{                                                         
+    font-size:14px;
+    font-family:Verdana;
+}
+table, tr,td
+{                                                         
+    border:1px solid black;
+    font-size:13px;
+}
+td
+{                                                        
+    text-align:center;
+    padding:3px;
+}
+thead, tfoot
+{                                                       
+    background:#84978F;
+}
+ol
+{                                                         
+    list-style-type:decimal;
+    padding-left:30px;
+}
+ul
+{                                                        
+    list-style-type:square; 
+    padding-left:30px;
+}
+dt
+{                                                         
+    padding-left:30px;
+    font-size:13px;
+    line-height:16px;
+    font-weight:bold;
+    font-family:Verdana;
+}
+dd
+{                                                         
+    margin-left:30px;
+}
+label
+{
+    width: 4em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+}
+input
+{
+    color: black;
+    background: white;
+}
+.submit
+{   
+    margin-left:5px;
+    margin-top:5px;
+    font-size:14px;
+    font-family:Verdana;
+    color: #000;
+    background: #84978F;
+    border: 2px outset black;
+} 
+fieldset
+{
+    border: 1px solid black;
+    width: 300px;
+}
+legend
+{
+    margin-left:5px;
+    font-weight:bold;
+    color: #fff;
+    background: #84978F;
+    border: 1px solid black;
+    padding: 2px 6px;
+}
+}                                                       /*Sluttagg till media print*/
