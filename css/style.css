@@ -12,9 +12,9 @@
 #header
 {                                                /*Huvudet av sidan*/
     width:100%;
-    height:120px;
-    background-image: url(pics/logoreal.svg);
-    background-position:right;
+    height:123px;
+    background-image: url(pics/Logo2.png);
+    background-position:bottom left;
     background-repeat:no-repeat;
 }
 #footer
@@ -90,6 +90,10 @@
 .right                                                   /*Klassen right. Används för att högerjustera*/
 {
     float:right;
+}
+.left                                                    /*Klassen leftt. Används för att vänsterjustera*/
+{
+    float:left;
 }
 h1
 {                                                       /*Rubriken på hemsidan*/
