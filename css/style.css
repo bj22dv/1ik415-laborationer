@@ -4,7 +4,7 @@
 #container
 {                                                /*Bakgrunden av sidan*/
     width:58%;
-    min-width:470px;
+    min-width:487px;
     overflow:auto;
     margin:auto;
     background:#527578;
@@ -65,6 +65,10 @@
     padding:5px;
     text-decoration:none;
     border:3px solid #84978F;
+}
+#nav li
+{
+    /*Till menyns lisa*/
 }
 #nav a:visited                                          /*Besökta länkar*/
 {
