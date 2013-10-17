@@ -85,6 +85,29 @@
 {
     color:black;
 }
+#navstart
+{
+    background-image: url(pics/sprite.png);
+    background-repeat:no-repeat;
+}
+#navlabb
+{
+    background-image: url(pics/sprite.png);
+    background-repeat:no-repeat;
+    background-position:0 -96px;
+}
+#navpres
+{
+    background-image: url(pics/sprite.png);
+    background-repeat:no-repeat;
+    background-position:0 -192px;
+}
+#navkon
+{
+    background-image: url(pics/sprite.png);
+    background-repeat:no-repeat;
+    background-position:0 -288px;
+}
 #container #nav .activeLink                            /*Länken till sidan använderen just nu befinner sig på*/
 {
     color:white;
