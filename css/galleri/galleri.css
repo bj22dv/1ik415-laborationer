@@ -1,0 +1,159 @@
+html {
+    padding-top: 100px;
+    padding-left: 100px;
+    
+    overflow: hidden;
+
+font-family: 'Tangerine';
+
+    background-color: #888;
+    
+    counter-reset: delay;
+}
+
+#gallery a {
+    display: block;
+    position: relative;
+    float: left;
+    
+    margin-right: 30px;
+    margin-bottom: 25px;
+    padding: 10px;
+    padding-bottom: 15px;
+    
+    width: 250px;
+    min-height: 250px;
+    z-index: 2;
+    
+    color: #242459;
+    background-color: white;
+    
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 10px 10px rgba(0, 0, 0, 0.2);
+    
+    animation: throw-in 2s;
+    transition: all 1.5s;
+    transform: rotate(5deg);
+}
+
+#gallery a:before {
+    
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    margin-bottom: -20px;
+    padding: 0;
+    overflow: hidden;
+    
+    width: 250px;
+    height: 20px;
+    
+    opacity: 0;
+    
+    font-size: 0.5em;
+    text-align: left;
+    word-break: break-all;
+    
+    transition: opacity 1s;
+    transition-delay: 0s;
+}
+
+#gallery a:after {
+    content: attr(title);
+    
+    display: block;
+    margin-top: -5px;
+    padding: 0;
+    
+    width: 250px;
+    
+    text-align: center;
+    
+    transform: rotate(-3deg) scale(1.05);
+}
+
+#gallery a:nth-child(3n - 2) {
+    z-index: 3;
+    transform: rotate(10deg) scale(1.1);
+}
+
+#gallery a:nth-child(3n) {
+    z-index: 1;
+    transform: rotate(-10deg) scale(1.2);
+}
+
+#gallery a:nth-child(4n - 3):after {
+    transform: rotate(5deg) scale(1.1);
+}
+
+#gallery a:nth-child(3n):after {
+    color: #2e2e73;
+    transform: rotate(2deg) scale(1.25);
+}
+
+#gallery a:nth-child(1):after {
+    font-size: 0.9em;
+}
+
+#gallery a:nth-child(4):after {
+    font-size: 0.9em;
+}
+
+#gallery a:hover, #gallery a:focus {
+    z-index: 10;
+    
+    box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.2),
+                -10px -10px 10px 20px rgba(0, 0, 0, 0.1);
+    
+    transform: scale(1.7);
+}
+
+@keyframes write {
+    from {
+        width: 0;
+    }
+    50% {
+        width: 100px;
+    }
+    to {
+        width: 250px;
+    }
+}
+
+@keyframes throw-in {
+    from {
+        transform: translate(1200px, 800px) rotate(180deg) rotateY(90deg);
+    }
+    to {
+    }
+}
+
+#gallery a:hover:before {
+    opacity: 0.8;
+    
+    animation: write 3s steps(50);
+    animation-delay: 1s;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+#gallery img {
+    margin: 0;
+    width: 100%;
+}
+
+p {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    margin: 0;
+
+    color: white;
+    font-size: 12px;
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    transform: rotate(-3deg);
+}

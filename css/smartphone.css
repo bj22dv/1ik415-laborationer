@@ -1,24 +1,24 @@
-@media screen                                               /*Här börjar koden för skärmvisning*/
+@media screen                                               /*Här börjar koden för visning på mobil eller mindre skärmar*/
 {
 
 #container
 {                                                /*Bakgrunden av sidan*/
     width:58%;
-    min-width:487px;
+    min-width:455px;
     overflow:auto;
     margin:auto;
-    background:#527578;
+    background:#B3B1B2;
 }
 
-header
+#header
 {                                                /*Huvudet av sidan*/
     width:100%;
     height:123px;
+    background:#527578;
     background-image: url(pics/Logo2.png);
     background-position:bottom left;
     background-repeat:no-repeat;
 }
-
 footer
 {                                                /*Foten av sidan*/
     width:100%;
@@ -31,10 +31,8 @@ footer
 
 #maincontent
 {                                           /*Det huvudsakliga innehållet på sidan*/
-    width:77%;
+    width:100%;
     min-height:500px;
-    margin-left: 22%;
-    border:4px solid #84978F;
     background:#B3B1B2;
 }
 
@@ -47,11 +45,9 @@ article
 }
 
 main
-{                                           
-    width:77%;
+{                                          
+    width:100%;
     min-height:500px;
-    margin-left: 22%;
-    border:4px solid #84978F;
     background:#B3B1B2;
 }
 
@@ -63,8 +59,6 @@ main
 
 #nav
 {                                                   /*Navigationsmenyn*/
-    width:20%;
-    height:128px;
     float: left;
     list-style-type:none;
     padding:0px;
@@ -73,31 +67,31 @@ main
 #nav a:link                                               /*Länkarna i navigationsmenyn*/
 {
     display:block;
-    font-weight:bold;
-    color:#FFFFFF;
-    background-color:#47423F;
-    width:100%;
+    float:left;
+    color:#eae7d2;
+    background-color:#B3B1B2;
+    padding:10px 23px 10px 23px;
     text-align:center;
-    padding:5px;
     text-decoration:none;
-    border:3px solid #84978F;
+    font-family:Verdana;
+    font-size:14px;
 }
 
-#nav li
+#nav li 
 {
-    /*Till menyns lisa*/
+    float:left;
 }
 
 #nav a:visited                                          /*Besökta länkar*/
 {
     color:#FFFFFF;
-    background-color:#B3B1B2;
+    background-color:#84978F;
     border:2px solid  #84978F;
 }
 
 #nav a:hover                                             /*Länkar man håller musen över*/
 {
-    background-color:#84978F;
+    background-color:#B3B1B2;
     color:#FFFFFF;
 }
 
@@ -110,27 +104,28 @@ main
 {
     background-image: url(pics/sprite.png);
     background-repeat:no-repeat;
+    background-position:0 3px;
 }
 
 #navlabb
 {
     background-image: url(pics/sprite.png);
     background-repeat:no-repeat;
-    background-position:0 -96px;
+    background-position:0 -93px;
 }
 
 #navpres
 {
     background-image: url(pics/sprite.png);
     background-repeat:no-repeat;
-    background-position:0 -192px;
+    background-position:0 -189px;
 }
 
 #navkon
 {
     background-image: url(pics/sprite.png);
     background-repeat:no-repeat;
-    background-position:0 -288px;
+    background-position:0 -285px;
 }
 
 #container #nav .activeLink                            /*Länken till sidan använderen just nu befinner sig på*/
@@ -145,7 +140,7 @@ main
     float:right;
 }
 
-.left                                                    /*Klassen leftt. Används för att vänsterjustera*/
+.left                                                    /*Klassen left. Används för att vänsterjustera*/
 {
     float:left;
 }
@@ -243,187 +238,6 @@ input
     color: #000;
     background: #84978F;
     border: 2px outset black;
-}
-
-fieldset
-{
-    border: 1px solid black;
-    width: 300px;
-}
-
-legend
-{
-    margin-left:5px;
-    font-weight:bold;
-    color: #fff;
-    background: #84978F;
-    border: 1px solid black;
-    padding: 2px 6px;
-}
-}                                                        /*Sluttagg till media screen*/
-
-@media print                                              /*Här börjar koden för det som visas vid utskrivning*/
-{
-    
-#container
-{                                            
-    width:973px;
-    overflow:auto;
-    margin:auto;
-    background:#527578;
-}
-
-#header
-{                                                
-    width:100%;
-    background-position:181% 45%;
-    background-repeat:no-repeat;
-}
-
-#footer
-{                                                
-    float:right;
-    width:973px;
-    height:50px;
-    background:#527578;
-    background-position:right;
-    background-repeat:no-repeat;
-}
-
-#maincontent
-{                                           
-    width:750px;
-    /*float: right;*/
-    border:4px solid #84978F;
-    background:#B3B1B2;
-}
-
-.post
-{                                                  
-    margin:10px 0 10px 10px;
-    background:#84978F;
-    border:2px solid #527578;
-    overflow:hidden;
-}
-
-#fest                                                   
-{
-    width:25%;
-    margin-bottom:10px;
-}
-
-#trailer
-{                                                       /*Videoklippet ska inte vara med*/
-    display:none;
-}
-
-#nav
-{                                                       /*Navigationsmenyn ska inte vara med*/
-    display:none;
-}
-
-a:after
-{
-    content: " (" attr(href) ")";
-}
-
-.right                                                   
-{
-    float:right;
-}
-
-h1
-{                                                      /*All text är mindre*/
-    font-size: 20px;
-    font-family:Batang;
-}
-
-h2
-{                                                       
-    font-size: 18px;
-    font-family:Verdana;
-}
-
-h3
-{                                                       
-    font-size: 16px;
-    font-family:Verdana;
-    text-decoration:underline;
-}
-
-p
-{                                                         
-    font-size:14px;
-    font-family:Verdana;
-}
-
-table, tr,td
-{                                                         
-    border:1px solid black;
-    font-size:13px;
-}
-
-td
-{                                                        
-    text-align:center;
-    padding:3px;
-}
-
-thead, tfoot
-{                                                       
-    background:#84978F;
-}
-
-ol
-{                                                         
-    list-style-type:decimal;
-    padding-left:30px;
-}
-
-ul
-{                                                        
-    list-style-type:square; 
-    padding-left:30px;
-}
-
-dt
-{                                                         
-    padding-left:30px;
-    font-size:13px;
-    line-height:16px;
-    font-weight:bold;
-    font-family:Verdana;
-}
-
-dd
-{                                                         
-    margin-left:30px;
-}
-
-label
-{
-    width: 4em;
-    float: left;
-    text-align: right;
-    margin-right: 0.5em;
-    display: block;
-}
-
-input
-{
-    color: black;
-    background: white;
-}
-
-.submit
-{   
-    margin-left:5px;
-    margin-top:5px;
-    font-size:14px;
-    font-family:Verdana;
-    color: #000;
-    background: #84978F;
-    border: 2px outset black;
 } 
 
 fieldset
@@ -441,4 +255,3 @@ legend
     border: 1px solid black;
     padding: 2px 6px;
 }
-}                                                       /*Sluttagg till media print*/
